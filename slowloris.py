@@ -174,9 +174,7 @@ def init_socket(ip):
     return s
 
 
-def main():
-    ip = args.host
-    socket_count = args.sockets
+def main(ip=args.host, socket_count=args.socket):
     logging.info("Attacking %s with %s sockets.", ip, socket_count)
 
     logging.info("Creating sockets...")
